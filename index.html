@@ -29,6 +29,12 @@ class: center, middle
 
 ---
 
+class: center, middle
+
+![](https://imgs.xkcd.com/comics/pgp.png)
+
+---
+
 # Overview
 
 1. Theoretical PGP / Intro to Security
@@ -61,7 +67,6 @@ when you're talking to someone on the internet you don't know
 
 * if the person you're talking is who they say they are (authentication)
 * if someone (either your communication client or a 3rd party) is intercepting (either reading or manipulating) your messages (confidentiality, integrity)
-
 
 ---
 
@@ -259,6 +264,10 @@ If you already have a key, figure out if you know the passphrase for it. If not,
 * Check with the person that the fingerprint you see is correct before saying "yes"!
 * Send their signed key to the keyserver
     * `gpg --keyserver pgp.mit.edu --send-key <their fingerprint or key id>`
+
+<div class="center middle">
+    <img src="https://imgs.xkcd.com/comics/responsible_behavior.png">
+</div>
 
 ---
 
