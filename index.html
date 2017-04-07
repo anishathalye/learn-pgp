@@ -23,7 +23,7 @@ class: center, middle
 
 # Learn PGP
 
-## SIPB Cluedump, 19 October 2016
+## SIPB, 07 April 2017
 
 ### Anish Athalye (aathalye), Merry Mou (mmou), Adam Suhl (asuhl)
 
@@ -306,8 +306,23 @@ If you already have a key, figure out if you know the passphrase for it. If not,
 
 * EFF Surveillance Self Defense https://ssd.eff.org/
 
-* Come to SIPB's PGP Key Signing and Movie Night Party on 10/27 7pm in the SIPB office (W20-557)!
-	* Bring your laptop and a government ID
+---
+
+# Key signing party
+
+* Strengthen the web of trust!
+
+* Protocol:
+    * Find your key ID by `gpg --list-secret-keys`
+    * Upload your key: `gpg --keyserver hkps://pgp.mit.edu --send-keys [key id]`
+    * Find your *full* key fingerprint by `gpg --list-secret-keys --fingerprint`
+    * Email your *full* key fingerprint to `aathalye@mit.edu`
+    * Get paper copies of your key/fingerprint/uid, verify that it's correct
+    * In pairs, verify each others' identity (using government ID) and exchange keys
+    * Download, sign, and upload all the keys
+        * Download one key: `gpg --keyserver hkps://pgp.mit.edu --recv-keys [fingerprint]`
+        * Sign one key: `gpg --sign-key [fingerprint]`
+        * Upload all keys: `gpg --keyserver hkps://pgp.mit.edu --send-keys`
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
